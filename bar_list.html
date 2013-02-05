@@ -1,0 +1,68 @@
+<div data-role="page" id="bar_list">
+		<div style="display:none" class="loader">
+			<img class="spinner" src="css/images/ajax-loader.png" />
+		</div>
+		<div data-role="header" data-tap-toggle="false" data-theme="c">
+			<div>
+				<a style="float:left; height:50px;" href="#menuPanel" id="openPanel"><img src="img/btnPanel.gif" height="50" /></a>
+				<h1 style="text-align:center; margin:0; padding:0; height:50px;"><a style="color:#fff !important; height:50px; margin-left:-50px" href="index.html"><img src="img/banqlogo.png" height="50" /></a></h1>
+				<a data-rel="popup" href="#popupBar" style="position:absolute; right:0; top:0;" ><img src="img/btnSettings.png" height="50" /></a>
+				<div style="clear:both; height:0"></div>
+			</div>
+		</div>
+		<div data-role="content">
+			<div id="bar_wrap">
+
+			</div>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<div data-role="navbar" class="icon-nav" data-theme="d">
+				<ul>
+					<li><a id="todayIcn" data-theme="c" data-icon="custom" href="#">Heute</a></li>
+					<li><a id="calIcn" data-theme="c" data-icon="custom" href="cal.html">Kalender</a></li>
+					<li><a id="liveMapIcn" data-theme="c" data-icon="custom" href="live-map.html">LiveMap</a></li>
+					<li><a id="barIcn" data-theme="c" data-icon="custom" href="bar_list.html">Cafe/Bars</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="panel" id="menuPanel" data-theme="c">
+			<ul data-role="listview" data-theme="c">
+				<li><span style="color:#bc0000">Seiten</span></li>
+				<li><a id="todayBtn" href="#">Heute</a></li>
+				<li><a href="cal.html">Kalender</a></li>
+				<li><a href="live-map.html">LiveMap</a></li>
+				<li><a href="styles.html">Stile</a></li>
+				<li><a href="news.html">Neuigkeiten <span style="color:#bc0000; display:none;" class="new_news"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="tickets.html">Freikarten <span style="color:#bc0000; display:none;" class="new_ticket"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="spezial.html">Spezial <span style="color:#bc0000; display:none;" class="new_special"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="kolumne.html">Kolumne <span style="color:#bc0000; display:none;" class="new_kolumne"><small>(Ungelesene)</small></span></a></li>
+				<li><span style="color:#bc0000">Caf&eacute;/Bar</span></li>
+				<li><a href="bar_list.html">Liste</a></li>
+				<li><a href="live-map.html">LiveMap</a></li>
+			</ul>
+		</div>
+		<div data-role="panel" id="optionPanel" data-position="right" data-theme="a">
+			<ul data-role="listview" data-theme="a">
+				<li><span style="color:#bc0000">Optionen</span></li>
+				<li><a id="cityDD" href="#">Dresden</a></li>
+				<li><a id="cityLE" href="#">Leipzig</a></li>
+			</ul>
+		</div>
+		<div data-role="popup" id="popupBar" data-theme="none" data-position-to="window">
+			<div  data-role="fieldcontain">
+			 	<fieldset data-role="controlgroup" id="barOptionList">
+					<input type="checkbox" name="'checkbox-1a'" id="checkbox-1a" class="custom" />
+					<label for="checkbox-1a">Cheetos</label>
+
+					<input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+					<label for="checkbox-2a">Doritos</label>
+					
+					<input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+					<label for="checkbox-3a">Fritos</label>
+
+					<input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+					<label for="checkbox-4a">Sun Chips</label>
+			    </fieldset>
+			</div>
+		</div>
+	</div>

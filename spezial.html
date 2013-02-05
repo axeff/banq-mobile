@@ -1,0 +1,46 @@
+<div  data-role="page" id="spezial">
+	<div style="display:none" class="loader">
+		<img class="spinner" src="css/images/ajax-loader.png" />
+	</div>
+	<div data-role="header" data-tap-toggle="false" data-theme="c">
+		<div>
+			<a style="float:left; height:50px;" href="#menuPanel" id="openPanel"><img src="img/btnPanel.gif" height="50" /></a>
+			<h1 style="text-align:center; margin:0; padding:0; height:50px;"><a style="color:#fff !important; height:50px; margin-left:-50px" href="index.html"><img src="img/banqlogo.png" height="50" /></a></h1>
+			<div style="clear:both; height:0"></div>
+		</div>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview" id="spezial_wrap">
+
+		</ul>
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+		<div data-role="navbar" class="icon-nav" data-theme="d">
+			<ul>
+				<li><a id="todayIcn" data-theme="c" data-icon="custom" href="#">Heute</a></li>
+				<li><a id="calIcn" data-theme="c" data-icon="custom" href="cal.html">Kalender</a></li>
+				<li><a id="liveMapIcn" data-theme="c" data-icon="custom" href="live-map.html">LiveMap</a></li>
+				<li><a id="barIcn" data-theme="c" data-icon="custom" href="bar_list.html">Cafe/Bars</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="panel" id="menuPanel" data-theme="c">
+			<ul data-role="listview" data-theme="c">
+				<li><span style="color:#bc0000">Seiten</span></li>
+				<li><a id="todayBtn" href="#">Heute</a></li>
+				<li><a href="cal.html">Kalender</a></li>
+				<li><a href="live-map.html">LiveMap</a></li>
+				<li><a href="styles.html">Stile</a></li>
+				<li><a href="news.html">Neuigkeiten <span style="color:#bc0000; display:none;" class="new_news"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="tickets.html">Freikarten <span style="color:#bc0000; display:none;" class="new_ticket"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="spezial.html">Spezial <span style="color:#bc0000; display:none;" class="new_special"><small>(Ungelesene)</small></span></a></li>
+				<li><a href="kolumne.html">Kolumne <span style="color:#bc0000; display:none;" class="new_kolumne"><small>(Ungelesene)</small></span></a></li>
+				<li><span style="color:#bc0000">Caf&eacute;/Bar</span></li>
+				<li><a href="bar_list.html">Liste</a></li>
+				<li><a href="live-map.html">LiveMap</a></li>
+				<li><span style="color:#bc0000">Optionen</span></li>
+				<li><a id="cityDD" href="#">Dresden</a></li>
+				<li><a id="cityLE" href="#">Leipzig</a></li>
+			</ul>
+		</div>
+</div>
